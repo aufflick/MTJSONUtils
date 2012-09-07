@@ -1,6 +1,6 @@
 //
-//  MTJSONDictionaryTests.m
-//  MTJSONDictionaryTests
+//  MTJSONUtilsTests.m
+//  MTJSONUtilsTests
 //
 //  Created by Adam Kirk on 8/16/12.
 //  Copyright (c) 2012 Mysterious Trousers. All rights reserved.
@@ -11,7 +11,7 @@
 
 
 
-@implementation MTJSONDictionaryTests
+@implementation MTJSONUtilsTests
 
 - (void)setUp
 {

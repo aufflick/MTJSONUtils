@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'MTJSONDictionary' target in the 'MTJSONDictionary' project
+// Prefix header for all source files of the 'MTJSONUtils' target in the 'MTJSONUtils' project
 //
 
 #ifdef __OBJC__
