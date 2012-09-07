@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C29BFF0315DD9A14004B71D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C29BFF0215DD9A14004B71D0 /* Foundation.framework */; };
+		C29BFF1215DD9A14004B71D0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C29BFF1115DD9A14004B71D0 /* SenTestingKit.framework */; };
+		C29BFF1415DD9A14004B71D0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C29BFF1315DD9A14004B71D0 /* UIKit.framework */; };
+		C29BFF1515DD9A14004B71D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C29BFF0215DD9A14004B71D0 /* Foundation.framework */; };
+		C29BFF1815DD9A14004B71D0 /* libMTJSONUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C29BFEFF15DD9A14004B71D0 /* libMTJSONUtils.a */; };
+		C2F6648315FA2D5D00999F12 /* NSObject+MTJSONUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F6648215FA2D5D00999F12 /* NSObject+MTJSONUtils.m */; };
+		C2F6648815FA2D7E00999F12 /* MTJSONUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F6648715FA2D7E00999F12 /* MTJSONUtilsTests.m */; };
+		C2F6648E15FA2D9E00999F12 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C2F6648C15FA2D9E00999F12 /* InfoPlist.strings */; };
+		C2F6649515FA395100999F12 /* NSObject+MTJSONUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F6648215FA2D5D00999F12 /* NSObject+MTJSONUtils.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C29BFF1615DD9A14004B71D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C29BFEF615DD9A14004B71D0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C29BFEFE15DD9A14004B71D0;
+			remoteInfo = MTJSONDictionary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C29BFEFD15DD9A14004B71D0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C29BFEFF15DD9A14004B71D0 /* libMTJSONUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMTJSONUtils.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C29BFF0215DD9A14004B71D0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C29BFF1015DD9A14004B71D0 /* MTJSONUtilsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTJSONUtilsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C29BFF1115DD9A14004B71D0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C29BFF1315DD9A14004B71D0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C2F6648115FA2D5D00999F12 /* NSObject+MTJSONUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+MTJSONUtils.h"; path = "MTJSONUtils/NSObject+MTJSONUtils.h"; sourceTree = SOURCE_ROOT; };
+		C2F6648215FA2D5D00999F12 /* NSObject+MTJSONUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MTJSONUtils.m"; path = "MTJSONUtils/NSObject+MTJSONUtils.m"; sourceTree = SOURCE_ROOT; };
+		C2F6648515FA2D6D00999F12 /* MTJSONUtils-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MTJSONUtils-Prefix.pch"; path = "MTJSONUtils/MTJSONUtils-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		C2F6648615FA2D7E00999F12 /* MTJSONUtilsTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MTJSONUtilsTests.h; path = MTJSONUtilsTests/MTJSONUtilsTests.h; sourceTree = SOURCE_ROOT; };
+		C2F6648715FA2D7E00999F12 /* MTJSONUtilsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MTJSONUtilsTests.m; path = MTJSONUtilsTests/MTJSONUtilsTests.m; sourceTree = SOURCE_ROOT; };
+		C2F6648915FA2D8900999F12 /* MTJSONUtilsTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "MTJSONUtilsTests-Info.plist"; path = "MTJSONUtilsTests/MTJSONUtilsTests-Info.plist"; sourceTree = SOURCE_ROOT; };
+		C2F6648D15FA2D9E00999F12 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = MTJSONUtilsTests/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C29BFEFC15DD9A14004B71D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C29BFF0315DD9A14004B71D0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C29BFF0C15DD9A14004B71D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C29BFF1215DD9A14004B71D0 /* SenTestingKit.framework in Frameworks */,
+				C29BFF1415DD9A14004B71D0 /* UIKit.framework in Frameworks */,
+				C29BFF1515DD9A14004B71D0 /* Foundation.framework in Frameworks */,
+				C29BFF1815DD9A14004B71D0 /* libMTJSONUtils.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C29BFEF415DD9A14004B71D0 = {
+			isa = PBXGroup;
+			children = (
+				C29BFF0415DD9A14004B71D0 /* MTJSONUtils */,
+				C29BFF1915DD9A14004B71D0 /* MTJSONUtilsTests */,
+				C29BFF0115DD9A14004B71D0 /* Frameworks */,
+				C29BFF0015DD9A14004B71D0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C29BFF0015DD9A14004B71D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C29BFEFF15DD9A14004B71D0 /* libMTJSONUtils.a */,
+				C29BFF1015DD9A14004B71D0 /* MTJSONUtilsTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C29BFF0115DD9A14004B71D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C29BFF0215DD9A14004B71D0 /* Foundation.framework */,
+				C29BFF1115DD9A14004B71D0 /* SenTestingKit.framework */,
+				C29BFF1315DD9A14004B71D0 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C29BFF0415DD9A14004B71D0 /* MTJSONUtils */ = {
+			isa = PBXGroup;
+			children = (
+				C2F6648115FA2D5D00999F12 /* NSObject+MTJSONUtils.h */,
+				C2F6648215FA2D5D00999F12 /* NSObject+MTJSONUtils.m */,
+				C29BFF0515DD9A14004B71D0 /* Supporting Files */,
+			);
+			name = MTJSONUtils;
+			path = MTJSONDictionary;
+			sourceTree = "<group>";
+		};
+		C29BFF0515DD9A14004B71D0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2F6648515FA2D6D00999F12 /* MTJSONUtils-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C29BFF1915DD9A14004B71D0 /* MTJSONUtilsTests */ = {
+			isa = PBXGroup;
+			children = (
+				C2F6648615FA2D7E00999F12 /* MTJSONUtilsTests.h */,
+				C2F6648715FA2D7E00999F12 /* MTJSONUtilsTests.m */,
+				C29BFF1A15DD9A14004B71D0 /* Supporting Files */,
+			);
+			name = MTJSONUtilsTests;
+			path = MTJSONDictionaryTests;
+			sourceTree = "<group>";
+		};
+		C29BFF1A15DD9A14004B71D0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C2F6648C15FA2D9E00999F12 /* InfoPlist.strings */,
+				C2F6648915FA2D8900999F12 /* MTJSONUtilsTests-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C29BFEFE15DD9A14004B71D0 /* MTJSONUtils */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C29BFF2415DD9A14004B71D0 /* Build configuration list for PBXNativeTarget "MTJSONUtils" */;
+			buildPhases = (
+				C29BFEFB15DD9A14004B71D0 /* Sources */,
+				C29BFEFC15DD9A14004B71D0 /* Frameworks */,
+				C29BFEFD15DD9A14004B71D0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MTJSONUtils;
+			productName = MTJSONDictionary;
+			productReference = C29BFEFF15DD9A14004B71D0 /* libMTJSONUtils.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C29BFF0F15DD9A14004B71D0 /* MTJSONUtilsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C29BFF2715DD9A14004B71D0 /* Build configuration list for PBXNativeTarget "MTJSONUtilsTests" */;
+			buildPhases = (
+				C29BFF0B15DD9A14004B71D0 /* Sources */,
+				C29BFF0C15DD9A14004B71D0 /* Frameworks */,
+				C29BFF0D15DD9A14004B71D0 /* Resources */,
+				C29BFF0E15DD9A14004B71D0 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C29BFF1715DD9A14004B71D0 /* PBXTargetDependency */,
+			);
+			name = MTJSONUtilsTests;
+			productName = MTJSONDictionaryTests;
+			productReference = C29BFF1015DD9A14004B71D0 /* MTJSONUtilsTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C29BFEF615DD9A14004B71D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Mysterious Trousers";
+			};
+			buildConfigurationList = C29BFEF915DD9A14004B71D0 /* Build configuration list for PBXProject "MTJSONUtils" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C29BFEF415DD9A14004B71D0;
+			productRefGroup = C29BFF0015DD9A14004B71D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C29BFEFE15DD9A14004B71D0 /* MTJSONUtils */,
+				C29BFF0F15DD9A14004B71D0 /* MTJSONUtilsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C29BFF0D15DD9A14004B71D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2F6648E15FA2D9E00999F12 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C29BFF0E15DD9A14004B71D0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C29BFEFB15DD9A14004B71D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2F6648315FA2D5D00999F12 /* NSObject+MTJSONUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C29BFF0B15DD9A14004B71D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2F6648815FA2D7E00999F12 /* MTJSONUtilsTests.m in Sources */,
+				C2F6649515FA395100999F12 /* NSObject+MTJSONUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C29BFF1715DD9A14004B71D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C29BFEFE15DD9A14004B71D0 /* MTJSONUtils */;
+			targetProxy = C29BFF1615DD9A14004B71D0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C2F6648C15FA2D9E00999F12 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C2F6648D15FA2D9E00999F12 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C29BFF2215DD9A14004B71D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C29BFF2315DD9A14004B71D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C29BFF2515DD9A14004B71D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/MTJSONDictionary.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MTJSONUtils/MTJSONUtils-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = MTJSONUtils;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C29BFF2615DD9A14004B71D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/MTJSONDictionary.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MTJSONUtils/MTJSONUtils-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = MTJSONUtils;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C29BFF2815DD9A14004B71D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MTJSONUtils/MTJSONUtils-Prefix.pch";
+				INFOPLIST_FILE = "MTJSONUtilsTests/MTJSONUtilsTests-Info.plist";
+				PRODUCT_NAME = MTJSONUtilsTests;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C29BFF2915DD9A14004B71D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MTJSONUtils/MTJSONUtils-Prefix.pch";
+				INFOPLIST_FILE = "MTJSONUtilsTests/MTJSONUtilsTests-Info.plist";
+				PRODUCT_NAME = MTJSONUtilsTests;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C29BFEF915DD9A14004B71D0 /* Build configuration list for PBXProject "MTJSONUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C29BFF2215DD9A14004B71D0 /* Debug */,
+				C29BFF2315DD9A14004B71D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C29BFF2415DD9A14004B71D0 /* Build configuration list for PBXNativeTarget "MTJSONUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C29BFF2515DD9A14004B71D0 /* Debug */,
+				C29BFF2615DD9A14004B71D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C29BFF2715DD9A14004B71D0 /* Build configuration list for PBXNativeTarget "MTJSONUtilsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C29BFF2815DD9A14004B71D0 /* Debug */,
+				C29BFF2915DD9A14004B71D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C29BFEF615DD9A14004B71D0 /* Project object */;
+}
