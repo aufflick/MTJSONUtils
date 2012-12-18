@@ -65,6 +65,7 @@
 			else {
 				index = [subscriptKey intValue];
 			}
+            if ([currentObject count] == 0) return nil;
 			if (index > [currentObject count] - 1) return nil;
 			currentObject = [currentObject objectAtIndex:index];
 			if ([currentObject isKindOfClass:[NSNull class]]) return nil;
