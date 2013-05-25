@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C254D9DC175109C4009B7B3B /* NSObject+MTJSONUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F6648215FA2D5D00999F12 /* NSObject+MTJSONUtils.m */; };
+		C254D9DE175109C4009B7B3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C29BFF0215DD9A14004B71D0 /* Foundation.framework */; };
 		C29BFF0315DD9A14004B71D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C29BFF0215DD9A14004B71D0 /* Foundation.framework */; };
 		C29BFF1215DD9A14004B71D0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C29BFF1115DD9A14004B71D0 /* SenTestingKit.framework */; };
 		C29BFF1415DD9A14004B71D0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C29BFF1315DD9A14004B71D0 /* UIKit.framework */; };
@@ -29,6 +31,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		C254D9DF175109C4009B7B3B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C29BFEFD15DD9A14004B71D0 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,6 +52,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C254D9E3175109C4009B7B3B /* libMTJSONUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMTJSONUtils.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C29BFEFF15DD9A14004B71D0 /* libMTJSONUtils.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMTJSONUtils.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C29BFF0215DD9A14004B71D0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C29BFF1015DD9A14004B71D0 /* MTJSONUtilsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTJSONUtilsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +68,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C254D9DD175109C4009B7B3B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C254D9DE175109C4009B7B3B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C29BFEFC15DD9A14004B71D0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -93,6 +113,7 @@
 			children = (
 				C29BFEFF15DD9A14004B71D0 /* libMTJSONUtils.a */,
 				C29BFF1015DD9A14004B71D0 /* MTJSONUtilsTests.octest */,
+				C254D9E3175109C4009B7B3B /* libMTJSONUtils.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,9 +170,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C29BFEFE15DD9A14004B71D0 /* MTJSONUtils */ = {
+		C254D9DA175109C4009B7B3B /* MTJSONUtils-OSX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C29BFF2415DD9A14004B71D0 /* Build configuration list for PBXNativeTarget "MTJSONUtils" */;
+			buildConfigurationList = C254D9E0175109C4009B7B3B /* Build configuration list for PBXNativeTarget "MTJSONUtils-OSX" */;
+			buildPhases = (
+				C254D9DB175109C4009B7B3B /* Sources */,
+				C254D9DD175109C4009B7B3B /* Frameworks */,
+				C254D9DF175109C4009B7B3B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MTJSONUtils-OSX";
+			productName = MTJSONDictionary;
+			productReference = C254D9E3175109C4009B7B3B /* libMTJSONUtils.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C29BFEFE15DD9A14004B71D0 /* MTJSONUtils-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C29BFF2415DD9A14004B71D0 /* Build configuration list for PBXNativeTarget "MTJSONUtils-iOS" */;
 			buildPhases = (
 				C29BFEFB15DD9A14004B71D0 /* Sources */,
 				C29BFEFC15DD9A14004B71D0 /* Frameworks */,
@@ -161,7 +199,7 @@
 			);
 			dependencies = (
 			);
-			name = MTJSONUtils;
+			name = "MTJSONUtils-iOS";
 			productName = MTJSONDictionary;
 			productReference = C29BFEFF15DD9A14004B71D0 /* libMTJSONUtils.a */;
 			productType = "com.apple.product-type.library.static";
@@ -206,7 +244,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C29BFEFE15DD9A14004B71D0 /* MTJSONUtils */,
+				C29BFEFE15DD9A14004B71D0 /* MTJSONUtils-iOS */,
+				C254D9DA175109C4009B7B3B /* MTJSONUtils-OSX */,
 				C29BFF0F15DD9A14004B71D0 /* MTJSONUtilsTests */,
 			);
 		};
@@ -240,6 +279,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C254D9DB175109C4009B7B3B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C254D9DC175109C4009B7B3B /* NSObject+MTJSONUtils.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C29BFEFB15DD9A14004B71D0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -262,7 +309,7 @@
 /* Begin PBXTargetDependency section */
 		C29BFF1715DD9A14004B71D0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C29BFEFE15DD9A14004B71D0 /* MTJSONUtils */;
+			target = C29BFEFE15DD9A14004B71D0 /* MTJSONUtils-iOS */;
 			targetProxy = C29BFF1615DD9A14004B71D0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -279,6 +326,34 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C254D9E1175109C4009B7B3B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DSTROOT = /tmp/MTJSONDictionary.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MTJSONUtils/MTJSONUtils-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = MTJSONUtils;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		C254D9E2175109C4009B7B3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DSTROOT = /tmp/MTJSONDictionary.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MTJSONUtils/MTJSONUtils-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = MTJSONUtils;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		C29BFF2215DD9A14004B71D0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -382,6 +457,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C254D9E0175109C4009B7B3B /* Build configuration list for PBXNativeTarget "MTJSONUtils-OSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C254D9E1175109C4009B7B3B /* Debug */,
+				C254D9E2175109C4009B7B3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C29BFEF915DD9A14004B71D0 /* Build configuration list for PBXProject "MTJSONUtils" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -391,7 +475,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C29BFF2415DD9A14004B71D0 /* Build configuration list for PBXNativeTarget "MTJSONUtils" */ = {
+		C29BFF2415DD9A14004B71D0 /* Build configuration list for PBXNativeTarget "MTJSONUtils-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C29BFF2515DD9A14004B71D0 /* Debug */,
