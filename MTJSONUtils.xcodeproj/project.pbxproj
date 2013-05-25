@@ -11,7 +11,6 @@
 		C254D9DE175109C4009B7B3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C29BFF0215DD9A14004B71D0 /* Foundation.framework */; };
 		C29BFF0315DD9A14004B71D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C29BFF0215DD9A14004B71D0 /* Foundation.framework */; };
 		C29BFF1215DD9A14004B71D0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C29BFF1115DD9A14004B71D0 /* SenTestingKit.framework */; };
-		C29BFF1415DD9A14004B71D0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C29BFF1315DD9A14004B71D0 /* UIKit.framework */; };
 		C29BFF1515DD9A14004B71D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C29BFF0215DD9A14004B71D0 /* Foundation.framework */; };
 		C29BFF1815DD9A14004B71D0 /* libMTJSONUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C29BFEFF15DD9A14004B71D0 /* libMTJSONUtils.a */; };
 		C2F6648315FA2D5D00999F12 /* NSObject+MTJSONUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F6648215FA2D5D00999F12 /* NSObject+MTJSONUtils.m */; };
@@ -57,7 +56,6 @@
 		C29BFF0215DD9A14004B71D0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C29BFF1015DD9A14004B71D0 /* MTJSONUtilsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTJSONUtilsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C29BFF1115DD9A14004B71D0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		C29BFF1315DD9A14004B71D0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		C2F6648115FA2D5D00999F12 /* NSObject+MTJSONUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+MTJSONUtils.h"; path = "MTJSONUtils/NSObject+MTJSONUtils.h"; sourceTree = SOURCE_ROOT; };
 		C2F6648215FA2D5D00999F12 /* NSObject+MTJSONUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MTJSONUtils.m"; path = "MTJSONUtils/NSObject+MTJSONUtils.m"; sourceTree = SOURCE_ROOT; };
 		C2F6648515FA2D6D00999F12 /* MTJSONUtils-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MTJSONUtils-Prefix.pch"; path = "MTJSONUtils/MTJSONUtils-Prefix.pch"; sourceTree = SOURCE_ROOT; };
@@ -89,7 +87,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C29BFF1215DD9A14004B71D0 /* SenTestingKit.framework in Frameworks */,
-				C29BFF1415DD9A14004B71D0 /* UIKit.framework in Frameworks */,
 				C29BFF1515DD9A14004B71D0 /* Foundation.framework in Frameworks */,
 				C29BFF1815DD9A14004B71D0 /* libMTJSONUtils.a in Frameworks */,
 			);
@@ -123,7 +120,6 @@
 			children = (
 				C29BFF0215DD9A14004B71D0 /* Foundation.framework */,
 				C29BFF1115DD9A14004B71D0 /* SenTestingKit.framework */,
-				C29BFF1315DD9A14004B71D0 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
