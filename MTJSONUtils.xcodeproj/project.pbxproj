@@ -13,6 +13,8 @@
 		C29BFF1215DD9A14004B71D0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C29BFF1115DD9A14004B71D0 /* SenTestingKit.framework */; };
 		C29BFF1515DD9A14004B71D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C29BFF0215DD9A14004B71D0 /* Foundation.framework */; };
 		C29BFF1815DD9A14004B71D0 /* libMTJSONUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C29BFEFF15DD9A14004B71D0 /* libMTJSONUtils.a */; };
+		C2ECB37817517AC100A779AC /* NSObject+MTJSONUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = C2F6648115FA2D5D00999F12 /* NSObject+MTJSONUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2ECB37A17517AD300A779AC /* NSObject+MTJSONUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = C2F6648115FA2D5D00999F12 /* NSObject+MTJSONUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C2F6648315FA2D5D00999F12 /* NSObject+MTJSONUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F6648215FA2D5D00999F12 /* NSObject+MTJSONUtils.m */; };
 		C2F6648815FA2D7E00999F12 /* MTJSONUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F6648715FA2D7E00999F12 /* MTJSONUtilsTests.m */; };
 		C2F6648E15FA2D9E00999F12 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C2F6648C15FA2D9E00999F12 /* InfoPlist.strings */; };
@@ -165,6 +167,25 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		C2ECB37717517ABA00A779AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2ECB37817517AC100A779AC /* NSObject+MTJSONUtils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2ECB37917517ACD00A779AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2ECB37A17517AD300A779AC /* NSObject+MTJSONUtils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		C254D9DA175109C4009B7B3B /* MTJSONUtils-OSX */ = {
 			isa = PBXNativeTarget;
@@ -173,6 +194,7 @@
 				C254D9DB175109C4009B7B3B /* Sources */,
 				C254D9DD175109C4009B7B3B /* Frameworks */,
 				C254D9DF175109C4009B7B3B /* CopyFiles */,
+				C2ECB37917517ACD00A779AC /* Headers */,
 			);
 			buildRules = (
 			);
@@ -190,6 +212,7 @@
 				C29BFEFB15DD9A14004B71D0 /* Sources */,
 				C29BFEFC15DD9A14004B71D0 /* Frameworks */,
 				C29BFEFD15DD9A14004B71D0 /* CopyFiles */,
+				C2ECB37717517ABA00A779AC /* Headers */,
 			);
 			buildRules = (
 			);
@@ -332,7 +355,6 @@
 				GCC_PREFIX_HEADER = "MTJSONUtils/MTJSONUtils-Prefix.pch";
 				PRODUCT_NAME = MTJSONUtils;
 				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -346,7 +368,6 @@
 				GCC_PREFIX_HEADER = "MTJSONUtils/MTJSONUtils-Prefix.pch";
 				PRODUCT_NAME = MTJSONUtils;
 				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -380,6 +401,7 @@
 					"-ObjC",
 				);
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -406,6 +428,7 @@
 					"-ObjC",
 				);
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -417,7 +440,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MTJSONUtils/MTJSONUtils-Prefix.pch";
 				PRODUCT_NAME = MTJSONUtils;
-				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -428,7 +450,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MTJSONUtils/MTJSONUtils-Prefix.pch";
 				PRODUCT_NAME = MTJSONUtils;
-				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
