@@ -11,9 +11,10 @@
 		C254D9DE175109C4009B7B3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C29BFF0215DD9A14004B71D0 /* Foundation.framework */; };
 		C29BFF0315DD9A14004B71D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C29BFF0215DD9A14004B71D0 /* Foundation.framework */; };
 		C29BFF1215DD9A14004B71D0 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C29BFF1115DD9A14004B71D0 /* SenTestingKit.framework */; };
-		C29BFF1415DD9A14004B71D0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C29BFF1315DD9A14004B71D0 /* UIKit.framework */; };
 		C29BFF1515DD9A14004B71D0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C29BFF0215DD9A14004B71D0 /* Foundation.framework */; };
 		C29BFF1815DD9A14004B71D0 /* libMTJSONUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C29BFEFF15DD9A14004B71D0 /* libMTJSONUtils.a */; };
+		C2ECB37817517AC100A779AC /* NSObject+MTJSONUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = C2F6648115FA2D5D00999F12 /* NSObject+MTJSONUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C2ECB37A17517AD300A779AC /* NSObject+MTJSONUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = C2F6648115FA2D5D00999F12 /* NSObject+MTJSONUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C2F6648315FA2D5D00999F12 /* NSObject+MTJSONUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F6648215FA2D5D00999F12 /* NSObject+MTJSONUtils.m */; };
 		C2F6648815FA2D7E00999F12 /* MTJSONUtilsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F6648715FA2D7E00999F12 /* MTJSONUtilsTests.m */; };
 		C2F6648E15FA2D9E00999F12 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C2F6648C15FA2D9E00999F12 /* InfoPlist.strings */; };
@@ -57,7 +58,6 @@
 		C29BFF0215DD9A14004B71D0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C29BFF1015DD9A14004B71D0 /* MTJSONUtilsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTJSONUtilsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C29BFF1115DD9A14004B71D0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		C29BFF1315DD9A14004B71D0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		C2F6648115FA2D5D00999F12 /* NSObject+MTJSONUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+MTJSONUtils.h"; path = "MTJSONUtils/NSObject+MTJSONUtils.h"; sourceTree = SOURCE_ROOT; };
 		C2F6648215FA2D5D00999F12 /* NSObject+MTJSONUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MTJSONUtils.m"; path = "MTJSONUtils/NSObject+MTJSONUtils.m"; sourceTree = SOURCE_ROOT; };
 		C2F6648515FA2D6D00999F12 /* MTJSONUtils-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MTJSONUtils-Prefix.pch"; path = "MTJSONUtils/MTJSONUtils-Prefix.pch"; sourceTree = SOURCE_ROOT; };
@@ -89,7 +89,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C29BFF1215DD9A14004B71D0 /* SenTestingKit.framework in Frameworks */,
-				C29BFF1415DD9A14004B71D0 /* UIKit.framework in Frameworks */,
 				C29BFF1515DD9A14004B71D0 /* Foundation.framework in Frameworks */,
 				C29BFF1815DD9A14004B71D0 /* libMTJSONUtils.a in Frameworks */,
 			);
@@ -123,7 +122,6 @@
 			children = (
 				C29BFF0215DD9A14004B71D0 /* Foundation.framework */,
 				C29BFF1115DD9A14004B71D0 /* SenTestingKit.framework */,
-				C29BFF1315DD9A14004B71D0 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -169,6 +167,25 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		C2ECB37717517ABA00A779AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2ECB37817517AC100A779AC /* NSObject+MTJSONUtils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2ECB37917517ACD00A779AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2ECB37A17517AD300A779AC /* NSObject+MTJSONUtils.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		C254D9DA175109C4009B7B3B /* MTJSONUtils-OSX */ = {
 			isa = PBXNativeTarget;
@@ -177,6 +194,7 @@
 				C254D9DB175109C4009B7B3B /* Sources */,
 				C254D9DD175109C4009B7B3B /* Frameworks */,
 				C254D9DF175109C4009B7B3B /* CopyFiles */,
+				C2ECB37917517ACD00A779AC /* Headers */,
 			);
 			buildRules = (
 			);
@@ -194,6 +212,7 @@
 				C29BFEFB15DD9A14004B71D0 /* Sources */,
 				C29BFEFC15DD9A14004B71D0 /* Frameworks */,
 				C29BFEFD15DD9A14004B71D0 /* CopyFiles */,
+				C2ECB37717517ABA00A779AC /* Headers */,
 			);
 			buildRules = (
 			);
@@ -229,7 +248,7 @@
 		C29BFEF615DD9A14004B71D0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0440;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Mysterious Trousers";
 			};
 			buildConfigurationList = C29BFEF915DD9A14004B71D0 /* Build configuration list for PBXProject "MTJSONUtils" */;
@@ -329,28 +348,24 @@
 		C254D9E1175109C4009B7B3B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				DSTROOT = /tmp/MTJSONDictionary.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MTJSONUtils/MTJSONUtils-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = MTJSONUtils;
 				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
 		C254D9E2175109C4009B7B3B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				DSTROOT = /tmp/MTJSONDictionary.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MTJSONUtils/MTJSONUtils-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = MTJSONUtils;
 				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -358,9 +373,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -373,10 +392,18 @@
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -384,18 +411,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -406,9 +444,7 @@
 				DSTROOT = /tmp/MTJSONDictionary.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MTJSONUtils/MTJSONUtils-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = MTJSONUtils;
-				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -418,9 +454,7 @@
 				DSTROOT = /tmp/MTJSONDictionary.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MTJSONUtils/MTJSONUtils-Prefix.pch";
-				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = MTJSONUtils;
-				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
