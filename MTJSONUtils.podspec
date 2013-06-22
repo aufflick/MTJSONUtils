@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage     	= "https://github.com/mysterioustrousers/MTJSONUtils.git"
   s.license      	= 'BSD'
   s.author       	= { "Adam Kirk" => "atomkirk@gmail.com" }
-  s.source       	= { :git => "https://github.com/mysterioustrousers/MTJSONUtils.git", :tag => "0.1.1" }
+  s.source       	= { :git => "https://github.com/mysterioustrousers/MTJSONUtils.git", :tag => "#{s.version}" }
   s.source_files 	= 'MTJSONUtils/*.{h,m}'
   s.requires_arc 	= true
 end
