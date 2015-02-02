@@ -28,7 +28,7 @@
 		return [self safeArrayFromArray:self];
 
 	else
-		return [self safeObjectFromObject:self];
+		return [self JSONSafeObject];
 }
 
 
@@ -99,7 +99,7 @@
 		return [object stringValue];
 
 	if ([object isKindOfClass:[NSDate class]])
-		return [NSString stringWithFormat:@"%@", [self safeObjectFromObject:object]];
+		return [NSString stringWithFormat:@"%@", [object JSONSafeObject]];
 
 	return [object description];
 }
@@ -115,8 +115,10 @@
 
 	NSMutableDictionary *cleanDictionary = [NSMutableDictionary dictionary];
 
-	for (id key in [dictionary allKeys]) {
-		id object = [dictionary objectForKey:key];
+	for (id key_ in [dictionary allKeys]) {
+        NSString * key = [key_ JSONSafeObject];
+        
+		id object = [dictionary objectForKey:key_];
 
 		if ([object isKindOfClass:[NSDictionary class]])
 			[cleanDictionary setObject:[object safeDictionaryFromDictionary:object] forKey:key];
@@ -125,7 +127,7 @@
 			[cleanDictionary setObject:[self safeArrayFromArray:object] forKey:key];
 
 		else
-			[cleanDictionary setObject:[self safeObjectFromObject:object] forKey:key];
+			[cleanDictionary setObject:[object JSONSafeObject] forKey:key];
 	}
 
 	return cleanDictionary;
@@ -144,29 +146,29 @@
 			[cleanArray addObject:[object safeDictionaryFromDictionary:object]];
 
 		else
-			[cleanArray addObject:[self safeObjectFromObject:object]];
+			[cleanArray addObject:[object JSONSafeObject]];
 	}
 
 	return cleanArray;
 }
 
-- (id)safeObjectFromObject:(id)object {
+- (id)JSONSafeObject {
 
 	NSArray *validClasses = @[ [NSString class], [NSNumber class], [NSNull class] ];
 	for (Class c in validClasses) {
-		if ([object isKindOfClass:c])
-			return object;
+		if ([self isKindOfClass:c])
+			return self;
 	}
 
-	if ([object isKindOfClass:[NSDate class]]) {
+	if ([self isKindOfClass:[NSDate class]]) {
 		NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
 		[formatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss'Z'"];
 		[formatter setTimeZone:[NSTimeZone timeZoneForSecondsFromGMT:0]];
-		NSString *ISOString = [formatter stringFromDate:object];
+		NSString *ISOString = [formatter stringFromDate:(NSDate *)self];
 		return ISOString;
 	}
 
-	return [object description];
+	return [self description];
 }
 
 
